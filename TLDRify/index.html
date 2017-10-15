@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tl;dr</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="Styles/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+</head>
+<body>
+	<div id="pageContent">
+		<div id="title">
+			<h1>tl;dr <span id="blink">|</span></h1>
+		</div>
+		<div id="input">
+			<input class="form-control form-control-lg" id="userInput" type="text" onkeyup="onkeyup_return_check(event)" onfocus="resetTxtField()" placeholder="Type Something...">
+		</div>
+		<div id="outputBox">
+			<p id="txtOutput"></p>
+		</div>
+		<div id="loadingBox">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw""></i>
+			<span class="sr-only">Loading...</span>
+		</div>
+		<div id="footer">
+			<p>This tool provides a TL;DR for anything through the use of summarisation and NLE.<br>Matt Penlington</p>
+		</div>
+	</div>
+
+	<script 
+		type="text/javascript" 
+		src="Scripts/flash.js">
+	</script>
+	<script 
+		type="text/javascript"
+		src="Scripts/submission.js">
+	</script>
+</body>
+</html>
